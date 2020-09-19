@@ -6,6 +6,8 @@
         public function boot()
         {
             $this->setupConfig(); // Load config
+            $this->loadRoutesFrom(__DIR__.'/routes/web.php'); // Import routes
+            $this->loadViewsFrom(__DIR__.'/views', 'kaboom'); // Import views
 
         }
         public function register()
