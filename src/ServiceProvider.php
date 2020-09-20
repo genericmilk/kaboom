@@ -8,7 +8,12 @@
             $this->setupConfig(); // Load config
             $this->loadRoutesFrom(__DIR__.'/routes/web.php'); // Import routes
             $this->loadViewsFrom(__DIR__.'/views', 'kaboom'); // Import views
-
+            $this->publishes([
+                __DIR__.'/assets' => public_path('vendor/kaboom'),
+            ], 'public');
+            $this->publishes([
+                __DIR__.'/migrations/' => database_path('migrations')
+            ], 'migrations');
         }
         public function register()
         {

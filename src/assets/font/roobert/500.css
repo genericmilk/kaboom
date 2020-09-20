@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Roobert';
+  src: url('Roobert-Medium.woff2') format('woff2'),
+       url('Roobert-Medium.woff') format('woff'),
+       url('Roobert-Medium.eot') format('embedded-opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

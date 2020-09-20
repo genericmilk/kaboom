@@ -14,10 +14,10 @@ return [
 
         ],
         'vonage' => [
-            'enabled' => env(false,'KABOOM_VONAGE_ENABLED'),            
-            'to' => env(null,'KABOOM_VONAGE_TO'),
-            'key' => env(null,'KABOOM_VONAGE_KEY'),
-            'secret' => env(null,'KABOOM_VONAGE_SECRET'),
+            'enabled' => env('KABOOM_VONAGE_ENABLED',false),            
+            'to' => env('KABOOM_VONAGE_TO',''),
+            'key' => env('KABOOM_VONAGE_KEY',''),
+            'secret' => env('KABOOM_VONAGE_SECRET',''),
         ]
     ]
 
